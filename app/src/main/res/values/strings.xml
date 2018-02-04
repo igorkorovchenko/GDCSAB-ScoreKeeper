@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Score Keeper - Beach volleyball</string>
+    <string name="increase_score">+1 Point</string>
+    <string name="team_a_label">Team A</string>
+    <string name="team_b_label">Team B</string>
+    <string name="zero_score">0</string>
+    <string name="player_table_header">P</string>
+    <string name="attack_table_header">K</string>
+    <string name="block_table_header">B</string>
+    <string name="serves_ace_table_header">A</string>
+    <string name="error_table_header">E</string>
+    <string name="player_1_short_label">P1</string>
+    <string name="player_2_short_label">P2</string>
+    <string name="player_1_long_label">Player 1</string>
+    <string name="player_2_long_label">Player 2</string>
+    <string name="score_reason_attack">Kill</string>
+    <string name="score_reason_block">Block</string>
+    <string name="score_reason_ace">Ace</string>
+    <string name="score_reason_error">Error</string>
+    <string name="button_reset_text">Reset</string>
+    <string name="button_undo_text">Undo</string>
+    <string name="toast_no_action">There is no action for undo.</string>
+    <string name="less_than_zero">Scores can be less than zero.</string>
+</resources>

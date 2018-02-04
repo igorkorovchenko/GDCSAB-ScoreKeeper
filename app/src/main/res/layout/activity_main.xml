@@ -1,0 +1,626 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="top|center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvTeamA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/team_a_label"
+                android:textSize="@dimen/label_text_size" />
+
+            <TextView
+                android:id="@+id/tvTeamAScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/zero_score"
+                android:textSize="@dimen/score_label_text_size" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvPlayerTeamAColumnHeader"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/player_table_header"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/label_text_size"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvAttackTeamAColumnHeader"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/attack_table_header"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/label_text_size"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvBlockTeamAColumnHeader"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/block_table_header"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/label_text_size"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvServeAceTeamAColumnHeader"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/serves_ace_table_header"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/label_text_size"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvErrorTeamAColumnHeader"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/error_table_header"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/label_text_size"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvLabelPlayer1TeamA"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/player_1_short_label"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/label_text_size" />
+
+                    <TextView
+                        android:id="@+id/tvAttackPlayer1TeamA"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/zero_score"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/label_text_size" />
+
+                    <TextView
+                        android:id="@+id/tvBlockPlayer1TeamA"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/zero_score"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:id="@+id/tvServeAcePlayer1TeamA"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/zero_score"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/label_text_size" />
+
+                    <TextView
+                        android:id="@+id/tvErrorPlayer1TeamA"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/zero_score"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/label_text_size" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvLabelPlayer2TeamA"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/player_2_short_label"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/label_text_size" />
+
+                    <TextView
+                        android:id="@+id/tvAttackPlayer2TeamA"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/zero_score"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/label_text_size" />
+
+                    <TextView
+                        android:id="@+id/tvBlockPlayer2TeamA"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/zero_score"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/label_text_size" />
+
+                    <TextView
+                        android:id="@+id/tvServeAcePlayer2TeamA"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/zero_score"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/label_text_size" />
+
+                    <TextView
+                        android:id="@+id/tvErrorPlayer2TeamA"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/zero_score"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/label_text_size" />
+                </TableRow>
+            </TableLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="horizontal"
+                android:paddingTop="12dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="top|center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvPlayer1TeamALabel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/player_1_long_label"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/label_text_size"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btnAttackPlayer1TeamA"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="increaseScoreByAttackP1TA"
+                        android:text="@string/score_reason_attack"
+                        android:textSize="@dimen/label_text_size" />
+
+                    <Button
+                        android:id="@+id/btnBlockPlayer1TeamA"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="increaseScoreByBlockP1TA"
+                        android:text="@string/score_reason_block"
+                        android:textSize="@dimen/label_text_size" />
+
+                    <Button
+                        android:id="@+id/btnAcePlayer1TeamA"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="increaseScoreByAceP1TA"
+                        android:text="@string/score_reason_ace"
+                        android:textSize="@dimen/label_text_size" />
+
+                    <Button
+                        android:id="@+id/btnErrorPlayer1TeamA"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="increaseScoreByErrorP1TA"
+                        android:text="@string/score_reason_error"
+                        android:textSize="@dimen/label_text_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvPlayer2TeamALabel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/player_2_long_label"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/label_text_size"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btnAttackPlayer2TeamA"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="increaseScoreByAttackP2TA"
+                        android:text="@string/score_reason_attack"
+                        android:textSize="@dimen/label_text_size" />
+
+                    <Button
+                        android:id="@+id/btnBlockPlayer2TeamA"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="increaseScoreByBlockP2TA"
+                        android:text="@string/score_reason_block"
+                        android:textSize="@dimen/label_text_size" />
+
+                    <Button
+                        android:id="@+id/btnAcePlayer2TeamA"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="increaseScoreByAceP2TA"
+                        android:text="@string/score_reason_ace"
+                        android:textSize="@dimen/label_text_size" />
+
+                    <Button
+                        android:id="@+id/btnErrorPlayer2TeamA"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="increaseScoreByErrorP2TA"
+                        android:text="@string/score_reason_error"
+                        android:textSize="@dimen/label_text_size" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/surfaceView"
+            android:layout_width="@dimen/delimitter_width"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:background="@color/colorPrimary" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="top|center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvTeamB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/team_b_label"
+                android:textSize="@dimen/label_text_size" />
+
+            <TextView
+                android:id="@+id/tvTeamBScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/zero_score"
+                android:textSize="@dimen/score_label_text_size" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvPlayerTeamBColumnHeader"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/player_table_header"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/label_text_size"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvAttackTeamBColumnHeader"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/attack_table_header"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/label_text_size"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvBlockTeamBColumnHeader"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/block_table_header"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/label_text_size"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvServeAceTeamBColumnHeader"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/serves_ace_table_header"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/label_text_size"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvErrorTeamBColumnHeader"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/error_table_header"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/label_text_size"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvLabelPlayer1TeamB"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/player_1_short_label"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/label_text_size" />
+
+                    <TextView
+                        android:id="@+id/tvAttackPlayer1TeamB"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/zero_score"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/label_text_size" />
+
+                    <TextView
+                        android:id="@+id/tvBlockPlayer1TeamB"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/zero_score"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:id="@+id/tvServeAcePlayer1TeamB"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/zero_score"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/label_text_size" />
+
+                    <TextView
+                        android:id="@+id/tvErrorPlayer1TeamB"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/zero_score"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/label_text_size" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvLabelPlayer2TeamB"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/player_2_short_label"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/label_text_size" />
+
+                    <TextView
+                        android:id="@+id/tvAttackPlayer2TeamB"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/zero_score"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/label_text_size" />
+
+                    <TextView
+                        android:id="@+id/tvBlockPlayer2TeamB"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/zero_score"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/label_text_size" />
+
+                    <TextView
+                        android:id="@+id/tvServeAcePlayer2TeamB"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/zero_score"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/label_text_size" />
+
+                    <TextView
+                        android:id="@+id/tvErrorPlayer2TeamB"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/zero_score"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/label_text_size" />
+                </TableRow>
+            </TableLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="horizontal"
+                android:paddingTop="12dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="top|center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvPlayer1TeamBLabel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/player_1_long_label"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/label_text_size"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btnAttackPlayer1TeamB"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="increaseScoreByAttackP1TB"
+                        android:text="@string/score_reason_attack"
+                        android:textSize="@dimen/label_text_size" />
+
+                    <Button
+                        android:id="@+id/btnBlockPlayer1TeamB"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="increaseScoreByBlockP1TB"
+                        android:text="@string/score_reason_block"
+                        android:textSize="@dimen/label_text_size" />
+
+                    <Button
+                        android:id="@+id/btnAcePlayer1TeamB"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="increaseScoreByAceP1TB"
+                        android:text="@string/score_reason_ace"
+                        android:textSize="@dimen/label_text_size" />
+
+                    <Button
+                        android:id="@+id/btnErrorPlayer1TeamB"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="increaseScoreByErrorP1TB"
+                        android:text="@string/score_reason_error"
+                        android:textSize="@dimen/label_text_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvPlayer2TeamBLabel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/player_2_long_label"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/label_text_size"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btnAttackPlayer2TeamB"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="increaseScoreByAttackP2TB"
+                        android:text="@string/score_reason_attack"
+                        android:textSize="@dimen/label_text_size" />
+
+                    <Button
+                        android:id="@+id/btnBlockPlayer2TeamB"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="increaseScoreByBlockP2TB"
+                        android:text="@string/score_reason_block"
+                        android:textSize="@dimen/label_text_size" />
+
+                    <Button
+                        android:id="@+id/btnAcePlayer2TeamB"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="increaseScoreByAceP2TB"
+                        android:text="@string/score_reason_ace"
+                        android:textSize="@dimen/label_text_size" />
+
+                    <Button
+                        android:id="@+id/btnErrorPlayer2TeamB"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="increaseScoreByErrorP2TB"
+                        android:text="@string/score_reason_error"
+                        android:textSize="@dimen/label_text_size" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="bottom|center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnUndo"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="undoLastAction"
+            android:text="@string/button_undo_text"
+            android:textAllCaps="true"
+            android:textSize="@dimen/label_text_size" />
+
+        <Button
+            android:id="@+id/btnReset"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="resetScore"
+            android:text="@string/button_reset_text"
+            android:textAllCaps="true"
+            android:textSize="@dimen/label_text_size" />
+
+    </LinearLayout>
+
+</LinearLayout>
