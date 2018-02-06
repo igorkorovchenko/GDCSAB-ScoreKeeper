@@ -218,7 +218,7 @@
                         android:id="@+id/btnAttackPlayer1TeamA"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:onClick="increaseScoreByAttackP1TA"
+                        android:onClick="onClick"
                         android:text="@string/score_reason_attack"
                         android:textSize="@dimen/label_text_size" />
 
@@ -226,7 +226,7 @@
                         android:id="@+id/btnBlockPlayer1TeamA"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:onClick="increaseScoreByBlockP1TA"
+                        android:onClick="onClick"
                         android:text="@string/score_reason_block"
                         android:textSize="@dimen/label_text_size" />
 
@@ -234,7 +234,7 @@
                         android:id="@+id/btnAcePlayer1TeamA"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:onClick="increaseScoreByAceP1TA"
+                        android:onClick="onClick"
                         android:text="@string/score_reason_ace"
                         android:textSize="@dimen/label_text_size" />
 
@@ -242,7 +242,7 @@
                         android:id="@+id/btnErrorPlayer1TeamA"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:onClick="increaseScoreByErrorP1TA"
+                        android:onClick="onClick"
                         android:text="@string/score_reason_error"
                         android:textSize="@dimen/label_text_size" />
                 </LinearLayout>
@@ -266,7 +266,7 @@
                         android:id="@+id/btnAttackPlayer2TeamA"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:onClick="increaseScoreByAttackP2TA"
+                        android:onClick="onClick"
                         android:text="@string/score_reason_attack"
                         android:textSize="@dimen/label_text_size" />
 
@@ -274,7 +274,7 @@
                         android:id="@+id/btnBlockPlayer2TeamA"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:onClick="increaseScoreByBlockP2TA"
+                        android:onClick="onClick"
                         android:text="@string/score_reason_block"
                         android:textSize="@dimen/label_text_size" />
 
@@ -282,7 +282,7 @@
                         android:id="@+id/btnAcePlayer2TeamA"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:onClick="increaseScoreByAceP2TA"
+                        android:onClick="onClick"
                         android:text="@string/score_reason_ace"
                         android:textSize="@dimen/label_text_size" />
 
@@ -290,7 +290,7 @@
                         android:id="@+id/btnErrorPlayer2TeamA"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:onClick="increaseScoreByErrorP2TA"
+                        android:onClick="onClick"
                         android:text="@string/score_reason_error"
                         android:textSize="@dimen/label_text_size" />
 
@@ -512,7 +512,7 @@
                         android:id="@+id/btnAttackPlayer1TeamB"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:onClick="increaseScoreByAttackP1TB"
+                        android:onClick="onClick"
                         android:text="@string/score_reason_attack"
                         android:textSize="@dimen/label_text_size" />
 
@@ -520,7 +520,7 @@
                         android:id="@+id/btnBlockPlayer1TeamB"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:onClick="increaseScoreByBlockP1TB"
+                        android:onClick="onClick"
                         android:text="@string/score_reason_block"
                         android:textSize="@dimen/label_text_size" />
 
@@ -528,7 +528,7 @@
                         android:id="@+id/btnAcePlayer1TeamB"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:onClick="increaseScoreByAceP1TB"
+                        android:onClick="onClick"
                         android:text="@string/score_reason_ace"
                         android:textSize="@dimen/label_text_size" />
 
@@ -536,7 +536,7 @@
                         android:id="@+id/btnErrorPlayer1TeamB"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:onClick="increaseScoreByErrorP1TB"
+                        android:onClick="onClick"
                         android:text="@string/score_reason_error"
                         android:textSize="@dimen/label_text_size" />
                 </LinearLayout>
@@ -560,7 +560,7 @@
                         android:id="@+id/btnAttackPlayer2TeamB"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:onClick="increaseScoreByAttackP2TB"
+                        android:onClick="onClick"
                         android:text="@string/score_reason_attack"
                         android:textSize="@dimen/label_text_size" />
 
@@ -568,7 +568,7 @@
                         android:id="@+id/btnBlockPlayer2TeamB"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:onClick="increaseScoreByBlockP2TB"
+                        android:onClick="onClick"
                         android:text="@string/score_reason_block"
                         android:textSize="@dimen/label_text_size" />
 
@@ -576,7 +576,7 @@
                         android:id="@+id/btnAcePlayer2TeamB"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:onClick="increaseScoreByAceP2TB"
+                        android:onClick="onClick"
                         android:text="@string/score_reason_ace"
                         android:textSize="@dimen/label_text_size" />
 
@@ -584,7 +584,7 @@
                         android:id="@+id/btnErrorPlayer2TeamB"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:onClick="increaseScoreByErrorP2TB"
+                        android:onClick="onClick"
                         android:text="@string/score_reason_error"
                         android:textSize="@dimen/label_text_size" />
 
@@ -606,7 +606,7 @@
             style="@style/Widget.AppCompat.Button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:onClick="undoLastAction"
+            android:onClick="onClick"
             android:text="@string/button_undo_text"
             android:textAllCaps="true"
             android:textSize="@dimen/label_text_size" />
@@ -616,7 +616,7 @@
             style="@style/Widget.AppCompat.Button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:onClick="resetScore"
+            android:onClick="onClick"
             android:text="@string/button_reset_text"
             android:textAllCaps="true"
             android:textSize="@dimen/label_text_size" />
